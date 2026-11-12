@@ -21,13 +21,20 @@ dependencies {
     implementation(project(":core:communication"))
     implementation(project(":core:audit"))
     implementation(project(":core:notifications"))
-    implementation(project(":pl"))
 
     implementation(libs.spring.boot.starter.webmvc)
+    implementation(libs.spring.boot.starter.jdbc)
+    implementation(libs.spring.boot.starter.flyway)
+    implementation(libs.spring.boot.starter.actuator)
     implementation(libs.spring.modulith.starter.core)
+    runtimeOnly(libs.flyway.database.postgresql)
+    runtimeOnly(libs.postgresql)
 
     testImplementation(libs.spring.boot.starter.webmvc.test)
     testImplementation(libs.spring.modulith.starter.test)
+    testImplementation(libs.spring.boot.testcontainers)
+    testImplementation(libs.testcontainers.postgresql)
+    testImplementation(libs.testcontainers.junit.jupiter)
     testRuntimeOnly(libs.junit.platform.launcher)
 }
 

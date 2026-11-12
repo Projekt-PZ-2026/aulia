@@ -11,7 +11,7 @@ export async function fetcher<T>(path: string, init?: RequestInit): Promise<T> {
   }
   return {
     status: response.status,
-    data: await response.json(),
+    data: response.status === 204 ? undefined : await response.json(),
     headers: response.headers,
   } as T;
 }

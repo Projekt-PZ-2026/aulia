@@ -4,4 +4,12 @@ export const pl = {
   "ping.button": "Sprawdź połączenie",
   "ping.result": "{{status}}, {{ms}} ms",
   "ping.error": "Brak połączenia z serwerem",
+  "announcement.placeholder": "Treść ogłoszenia",
+  "announcement.save": "Zapisz",
+  "announcement.saved": "Zapisano",
+  "announcement.saveError": "Nie udało się zapisać ogłoszenia",
+  "announcement.current": "Aktualne ogłoszenie: {{text}}",
+  "announcement.empty": "Nie ma jeszcze żadnego ogłoszenia",
+  "announcement.refresh": "Odśwież",
+  "announcement.loadError": "Nie udało się pobrać ogłoszenia",
 };

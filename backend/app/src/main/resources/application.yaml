@@ -1,3 +1,27 @@
 spring:
   application:
     name: aulia
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/aulia}
+    username: aulia_app
+    password: ${APP_DB_PASSWORD:aulia_app}
+  flyway:
+    user: ${POSTGRES_USER:aulia}
+    password: ${POSTGRES_PASSWORD:aulia}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      group:
+        readiness:
+          include: readinessState,db
+
+aulia:
+  cors:
+    allowed-origins: http://localhost:*

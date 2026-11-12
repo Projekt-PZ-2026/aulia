@@ -9,5 +9,8 @@ java {
 }
 
 dependencies {
+    implementation(platform(libs.spring.boot.dependencies))
     implementation(libs.spring.modulith.api)
+    implementation(libs.spring.boot.starter.webmvc)
+    implementation(libs.spring.boot.starter.jdbc)
 }

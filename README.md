@@ -1,4 +1,6 @@
-# E-dziennik dla szkół
+# Aulia.pl
+
+E-dziennik dla szkół. Projekt na przedmiot programowanie zespołowe.
 
 ## Z czego to jest zrobione
 
@@ -17,8 +19,8 @@ Strony www są w React z Vite i Tailwindem, aplikacje na telefon w React Native 
 ## Pierwsze uruchomienie
 
 ```
-git clone https://github.com/Projekt-PZ-2026/edziennik
-cd edziennik
+git clone https://github.com/Projekt-PZ-2026/aulia
+cd aulia
 cp .env.example .env
 cd frontend
 nvm use

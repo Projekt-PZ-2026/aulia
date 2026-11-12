@@ -50,6 +50,14 @@ cd backend
 ./gradlew :app:bootRun
 ```
 
+Migracje bazy są w `backend/app/src/main/resources/db/migration` i odpalają się same przy starcie backendu. Nowa migracja to nowy plik z kolejnym numerem, np. `V2__add_grades.sql`. Migracji, która już jest na main, nigdy nie zmieniamy, tylko dodajemy kolejną.
+
+Role i uprawnienia w bazie zakłada `deploy/postgres/init.sh`, ale tylko przy pierwszym starcie, na pustym dysku, p o zmianie tego pliku trzeba usunąć:
+
+```
+docker compose down -v
+```
+
 ## Strony www
 
 ```
@@ -78,7 +86,6 @@ Druga aplikacja to `family-mobile`.
 backend/
   app/         aplikacja Spring Boot: start, konfiguracja, kontrolery
   core/        moduły dziennika, każdy w osobnym katalogu
-  pl/          to, co wynika z polskich przepisów (skala ocen, PESEL, eksporty MEN)
 frontend/
   apps/        staff-web, family-web, staff-mobile, family-mobile
   packages/    kod wspólny

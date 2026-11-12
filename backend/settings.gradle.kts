@@ -8,7 +8,6 @@ include("core:assessment")
 include("core:communication")
 include("core:audit")
 include("core:notifications")
-include("pl")
 include("app")
 
 dependencyResolutionManagement {

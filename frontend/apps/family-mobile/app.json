@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Aulia",
+    "slug": "family-mobile",
+    "version": "1.0.0",
+    "scheme": "aulia-family",
+    "orientation": "portrait",
+    "plugins": ["expo-router"]
+  }
+}

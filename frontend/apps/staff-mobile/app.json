@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "Aulia",
+    "slug": "staff-mobile",
+    "version": "1.0.0",
+    "scheme": "aulia-staff",
+    "orientation": "portrait",
+    "plugins": ["expo-router"]
+  }
+}

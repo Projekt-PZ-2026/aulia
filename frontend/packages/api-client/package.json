@@ -1,0 +1,20 @@
+{
+  "name": "@aulia/api-client",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "generate": "orval",
+    "lint": "eslint .",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@aulia/config": "workspace:*",
+    "eslint": "10.14.0",
+    "orval": "8.47.0",
+    "typescript": "6.0.3"
+  }
+}

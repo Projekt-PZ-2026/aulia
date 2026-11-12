@@ -1,0 +1,19 @@
+{
+  "name": "aulia",
+  "private": true,
+  "packageManager": "pnpm@12.18.0",
+  "scripts": {
+    "dev": "turbo run dev",
+    "generate": "turbo run generate",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "3.10.0",
+    "turbo": "2.11.11"
+  }
+}

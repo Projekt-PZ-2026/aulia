@@ -1,0 +1,7 @@
+{
+  "extends": "@aulia/config/tsconfig/base.json",
+  "compilerOptions": {
+    "types": ["expo/types", "nativewind/types"]
+  },
+  "include": ["src"]
+}

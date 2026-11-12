@@ -1,0 +1,4 @@
+{
+  "extends": "@aulia/config/tsconfig/base.json",
+  "include": ["src"]
+}

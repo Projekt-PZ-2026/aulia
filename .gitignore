@@ -1,0 +1,16 @@
+.env
+
+build/
+.gradle/
+node_modules/
+dist/
+.expo/
+.turbo/
+expo-env.d.ts
+frontend/packages/api-client/src/generated/
+
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

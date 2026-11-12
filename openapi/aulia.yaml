@@ -1,0 +1,28 @@
+openapi: 3.1.0
+info:
+  title: Aulia
+  version: 0.1.0
+paths:
+  /api/ping:
+    get:
+      operationId: getPing
+      responses:
+        "200":
+          description: Backend is up
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Ping"
+components:
+  schemas:
+    Ping:
+      type: object
+      required:
+        - status
+        - time
+      properties:
+        status:
+          type: string
+        time:
+          type: string
+          format: date-time

@@ -1,0 +1,23 @@
+{
+  "name": "@aulia/ui-web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^19.3.0"
+  },
+  "devDependencies": {
+    "@aulia/config": "workspace:*",
+    "@types/react": "19.3.0",
+    "eslint": "10.14.0",
+    "react": "19.3.0",
+    "typescript": "6.0.3"
+  }
+}

@@ -15,6 +15,6 @@
     "@aulia/config": "workspace:*",
     "eslint": "10.14.0",
     "orval": "8.47.0",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   }
 }
